@@ -7,7 +7,7 @@ use tokio_websockets::{ClientBuilder, Message};
 #[tokio::main]
 async fn main() -> Result<(), tokio_websockets::Error> {
     let (mut ws_stream, _) =
-        ClientBuilder::from_uri(Uri::from_static("ws://127.0.0.1:8000"))
+        ClientBuilder::from_uri(Uri::from_static("ws://127.0.0.1:2000"))
             .connect()
             .await?;
 
@@ -23,7 +23,7 @@ async fn main() -> Result<(), tokio_websockets::Error> {
                 match incoming {
                     Some(Ok(msg)) => {
                         if let Some(text) = msg.as_text() {
-                            println!("From server: {}", text);
+                            println!("From Danniel's Computer: {}", text);
                         }
                     },
                     Some(Err(err)) => return Err(err.into()),
