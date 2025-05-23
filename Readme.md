@@ -2,6 +2,8 @@
 
 Dicontoh saya menjalankan 3 client dan 1 server.
 Program menunjukkan sistem seperti broadcast dimana server menerima permintaan pesan dari client dan mengirimkan pesan tersebut ke client yang terhubung dengannya. 
+![alt text](image.png)
+
 
 # Experiment 2.2: Modifying port
 
